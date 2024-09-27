@@ -1,0 +1,11 @@
+{
+    "name": "your-app-name",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node backend/src/server.js",
+      "heroku-postbuild": "cd frontend && npm install && npm run build"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+  }
