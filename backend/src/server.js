@@ -34,6 +34,19 @@ mongoose.connect(uri)
     console.error('Connection fail', error);
   });
 
+
+app.get("/*", function (req, res) {
+  res.sendFile(
+    path.join(__dirname, "..frontend/build/index.html"),
+    function(err){
+      if (err) {
+        res.status(500).send(err);
+      }
+    }
+  )
+})
+
+
   // After all route handlers
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;

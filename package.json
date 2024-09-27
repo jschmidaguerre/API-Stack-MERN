@@ -1,11 +1,28 @@
 {
-    "name": "your-app-name",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-      "start": "node backend/src/server.js",
-      "heroku-postbuild": "cd frontend && npm install && npm run build"
-    },
-    "dependencies": {},
-    "devDependencies": {}
-  }
+  "name": "api-stack-mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend/src && node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jschmidaguerre/API-Stack-MERN.git"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jschmidaguerre/API-Stack-MERN/issues"
+  },
+  "homepage": "https://github.com/jschmidaguerre/API-Stack-MERN#readme"
+}
